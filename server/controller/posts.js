@@ -54,7 +54,7 @@ router.get('/search/:keyword', async (req, res) => {
     try {
         const posts = await db.Posts.findAll({
             where: {
-                pavadinimas: {
+                caption: {
                     [Op.like]: '%' + req.params.keyword + '%'
                 }
             }
