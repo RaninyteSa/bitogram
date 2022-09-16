@@ -1,0 +1,212 @@
+body {
+  text-align: center;
+  background-color: rgb(226, 188, 221);
+  /* background-image: url("https://st2.depositphotos.com/3591429/47012/i/600/depositphotos_470124696-stock-photo-sparkle-ocean-waves-pastel-image.jpg"); */
+  background-repeat: no-repeat;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  background-size: 120%;
+
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: rgb(245, 238, 228, 0.5);
+  color:rgba(156, 73, 73, 0.767) 
+}
+
+th, td {
+  height: 25px;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid rgba(156, 73, 73, 0.767) ;
+  
+}
+
+th {
+  height: 40px;
+}
+
+tr:hover {background-color: rgb(231, 187, 170, 0.6);}
+
+h1,h2 {
+  color: rgb(220, 130, 234);
+  text-decoration: none;
+}
+header {
+  background-color: rgb(236, 184, 239);
+  color: rgb(42, 38, 41);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+ 
+ 
+}
+ul,  li, a{
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+ 
+}
+.single-post {
+  border-radius: 25px;
+  color:  rgb(245, 245, 245);
+  height: 510px;
+  width: 355px;
+  margin: 0 auto;
+  margin-top: 60px;
+  background-color:rgb(245, 238, 231,.3);
+  justify-content: center;
+  text-align: center;
+
+}
+
+.articles{
+  justify-content: center;
+  padding: 5px 0;
+  display: flex;
+  flex-wrap: wrap;
+  color:  rgb(235, 226, 151);
+  font-size: medium;
+ } 
+
+.content {
+  color:  rgb(245, 245, 245);
+  overflow-x: scroll;
+  margin: 0px auto;
+  height: 250px;
+  width: 210px;
+  align-content: space-around;
+  
+}
+
+.link {
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgb(202, 134, 205);
+  color: beige;
+  border: 0px;
+  border-radius: 15%;
+  margin-left: 10px;
+}
+
+
+button {
+  background-color: rgb(202, 134, 205);
+  color: beige;
+  border: 0px;
+  border-radius: 15%;
+  margin-left: 10px;
+}
+
+
+
+div.text-end {
+  text-align: end;
+}
+
+input, select, textarea {
+  background-color: rgba(217, 217, 207, 0.2);
+  border-color: aliceblue;
+}
+
+form.form, .containerr {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(245, 238, 228, 0.5);
+  color:rgba(156, 73, 73, 0.767) ;
+  justify-content: center;
+  max-width: fit-content;
+  height: 115px;
+  text-align: center;
+  margin: 15px auto;
+}
+div .box {
+  box-shadow: 1px 0px 1px  rgb(245, 245, 245);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 14px;
+  margin: 15px 10px auto;
+  height: 340px;
+  width: 340px;
+  color:  rgb(245, 245, 245);
+  font-size: medium;
+  text-align: center;
+  background-color: rgb(255, 252, 224,.3 );
+}
+
+div.image {
+  box-shadow: 1px 0px 1px  rgb(245, 245, 245);
+  border-radius: 16px  ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 234px;
+  width: 213px;
+  margin: auto 68px;
+  
+
+ }
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(221, 167, 209);
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(100, 77, 77);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  rgba(242, 227, 227, 0.6);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(128, 102, 102, 0.4);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
