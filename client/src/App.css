@@ -3,7 +3,8 @@ body {
   background-color: rgb(226, 188, 221);
   /* background-image: url("https://st2.depositphotos.com/3591429/47012/i/600/depositphotos_470124696-stock-photo-sparkle-ocean-waves-pastel-image.jpg"); */
   background-repeat: no-repeat;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Dancing Script', cursive;
+  font-size: xx-large;
   
   background-size: 120%;
 
@@ -41,7 +42,7 @@ header {
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  font-size: 17px;
+  font-size: 35px;
  
  
 }
@@ -71,7 +72,7 @@ ul,  li, a{
   display: flex;
   flex-wrap: wrap;
   color:  rgb(235, 226, 151);
-  font-size: medium;
+  font-size: 25px;
  } 
 
 .content {
@@ -116,7 +117,6 @@ input, select, textarea {
 }
 
 form.form, .containerr {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: rgb(245, 238, 228, 0.5);
   color:rgba(156, 73, 73, 0.767) ;
   justify-content: center;
@@ -134,7 +134,7 @@ div .box {
   height: 340px;
   width: 340px;
   color:  rgb(245, 245, 245);
-  font-size: medium;
+  font-size: 25px;
   text-align: center;
   background-color: rgb(255, 252, 224,.3 );
 }
@@ -158,7 +158,7 @@ div.image {
 
 .navbar a {
   float: left;
-  font-size: 16px;
+  font-size: 25px;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -171,7 +171,7 @@ div.image {
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 25px;  
   border: none;
   outline: none;
   color: white;
@@ -210,3 +210,5 @@ div.image {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
