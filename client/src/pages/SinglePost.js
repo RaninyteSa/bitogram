@@ -2,6 +2,8 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { useEffect, useState, useContext } from 'react'
 import axios from 'axios'
 import MainContext from '../context/MainContext'
+// import cn from "classnames";
+
 
 
 
@@ -17,6 +19,8 @@ const SinglePost = () => {
         status: ''
     })
     const [refresh, setRefresh] = useState(false)
+    // const [liked, setLiked] = useState(null);
+    // const [clicked, setClicked] = useState(false);
 
 
     useEffect(() => {
@@ -64,6 +68,10 @@ const SinglePost = () => {
             if(error.response.status === 401)
                 setTimeout(() => navigate('/login'), 2000)
         })
+
+        // function myFunction() {
+        //     document.getElementById("demo").style.color = "red";
+        //   }
     }
 
     return (
@@ -99,7 +107,21 @@ const SinglePost = () => {
                     <div>
                         <button className='komentarai'>skelbti komentarą</button>
                     </div>
+                    
                 </form>
+                {/* <button
+                    onClick={() => setLiked(!liked)}
+                    onAnimationEnd={() => setClicked(false)}
+                    className={cn("like-button-wrapper", {
+                      liked,
+                    })}
+                  >
+                    
+                    <div className="like-button">
+                        
+                        <span>like</span>
+                    </div>
+                    </button> */}
             </div>
             
            : <div className='komentarai'>'Prisijunkite norėdami palikti komentarą'</div> } 

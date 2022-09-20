@@ -15,6 +15,11 @@ const EditPost = () => {
         status: ''
     })
 
+    const [postForm, setPostForm] = useState({
+        caption: '',
+        photo: ''
+    })
+
     const navigate = useNavigate()
 
     useEffect(() => {
@@ -34,13 +39,19 @@ const EditPost = () => {
     }, [alert, navigate])
 
     const handleForm = (e) => {
-        setPost({...post, [e.target.name]: e.target.value})
+        setPostForm({...postForm, [e.target.name]: e.target.name === 'photo' ? e.target.files[0] : e.target.value})
     }
 
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        axios.put('/api/posts/edit/' + id, post)
+        const form = new FormData()
+        
+        for(const key in postForm) {
+            form.append(key,postForm[key])
+        }
+
+        axios.put('/api/posts/edit/' + id, form)
         .then(resp => {
             setAlert({
                 message: resp.data,
@@ -71,7 +82,7 @@ const EditPost = () => {
  
                 <div className="form-control">
                     <label>Nuotrauka:</label>
-                    <input type="text" name="photo" onChange={(e) => handleForm(e)} />
+                    <input type="file" name="photo" onChange={(e) => handleForm(e)} />
                 </div>
                 <div className="form-control">
                     <label>Komentaras:</label>

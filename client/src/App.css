@@ -1,4 +1,4 @@
-body {
+body, html {
   text-align: center;
   background-color: rgb(226, 188, 221);
   /* background-image: url("https://st2.depositphotos.com/3591429/47012/i/600/depositphotos_470124696-stock-photo-sparkle-ocean-waves-pastel-image.jpg"); */
@@ -6,7 +6,7 @@ body {
   font-family: 'Dancing Script', cursive;
   font-size: xx-large;
   
-  background-size: 120%;
+  background-size: 200%;
 
 }
 

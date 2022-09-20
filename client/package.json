@@ -7,6 +7,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
+    "classnames": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
@@ -20,10 +21,8 @@
     "extends": [
       "react-app",
       "react-app/jest"
-      
     ]
   },
- 
   "browserslist": {
     "production": [
       ">0.2%",
@@ -36,9 +35,8 @@
       "last 1 safari version"
     ]
   },
-
   "devDependencies": {
     "nodemon": "^2.0.19"
-  }, 
+  },
   "proxy": "http://localhost:3000"
 }

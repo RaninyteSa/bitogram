@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
     const options = {}
 
     if(req.query.order)
-        options.order= [['pavadinimas', 'DESC']]
+        options.order= [['caption', 'DESC']]
 
 
   try {
@@ -94,8 +94,10 @@ router.post('/', adminAuth , upload.single('photo'),  postValidator,  async (req
     
 })
 
-router.put('/edit/:id', adminAuth , upload.single('nuotrauka'), async (req, res) => {
+router.put('/edit/:id', adminAuth , upload.single('photo'), async (req, res) => {
     try {
+        if(req.file) 
+        req.body.photo = '/uploads/' + req.file.filename
         const post = await db.Posts.findByPk(req.params.id)
         post.update(req.body)
         res.send('Įrašas sėkmingai atnaujintas')
